@@ -1,0 +1,104 @@
+Build Configuration:
+WRLINUX_VERSION      = "10.18.40.0"
+WRLINUX_BRANCH       = "development"
+BB_VERSION           = "1.39.1"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "centos-7"
+DISTRO               = "wrlinux-small"
+DISTRO_VERSION       = "10.18.40.0"
+MACHINE              = "qemux86-64"
+DEFAULTTUNE          = "core2-64"
+TARGET_SYS           = "x86_64-wrs-linux"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+lib32:  DEFAULTTUNE       = "core2-32"
+lib32:  TARGET_SYS        = "i686-wrsmllib32-linux"
+lib32:  TUNE_FEATURES     = "m32 core2"
+wrlinux              
+wrlinux-distro       = "HEAD:6825e268c49a36f2b106930faa60c718fb7815b0"
+meta                 = "HEAD:5cfcd412afb65cafd66d15a3de12d6f8df9fcdab"
+meta-initramfs       
+meta-xfce            
+meta-oe              
+meta-filesystems     
+meta-webserver       
+meta-networking      
+meta-python          
+meta-perl            
+meta-gnome           
+meta-multimedia      = "HEAD:25c0e39c636d9523172eea525e373e0c4c8541b2"
+meta-security        = "HEAD:d980ad25c8d6b788ac85d7036b46536d97b2b9ee"
+meta-selinux         = "HEAD:a98a2459455c14987e5ddaa573cc40a4ad74d4db"
+intel-x86            = "HEAD:29d5c01379881bd7fcf2266f76550f4bd4422696"
+meta-virtualization  = "HEAD:0c970af1fb6b06a258166c02f928280c94af9952"
+meta-realtime        = "HEAD:7c73ebbf9d7ea25fa706b1164249e2be5e1fd0ac"
+meta-mingw           = "HEAD:f7ed27ce06e59e84dc4fb6016df0ddf7827e31bb"
+wr-template          = "HEAD:2857f7264510c61dffaaa8d01ab3d1af491667f3"
+meta-yocto-bsp       
+meta-poky            = "HEAD:f7d36129adfeb0d0d5fe26675e2668c49573a32d"
+meta-gplv2           = "HEAD:7da7fe810495568d186cf0a043230ef4630077ec"
+meta-efi-secure-boot 
+meta-encrypted-storage 
+meta-integrity       
+meta-signing-key     = "HEAD:19025d96058d31594ff7649262300b0845b6b787"
+meta-cloud-services  = "HEAD:b5171a5228c833f21f519a6aa8d7da6811f39e2e"
+meta                 
+meta-ids             
+meta-tpm             
+meta-tpm2            = "HEAD:19025d96058d31594ff7649262300b0845b6b787"
+meta-openstack       
+meta-openstack-aio-deploy 
+meta-openstack-compute-deploy 
+meta-openstack-compute-test-config 
+meta-openstack-controller-deploy 
+meta-openstack-controller-test-config 
+meta-openstack-qemu  
+meta-openstack-swift-deploy = "HEAD:b5171a5228c833f21f519a6aa8d7da6811f39e2e"
+meta-intel           = "HEAD:ffab1ee77a2055a857d9782066217df548b37316"
+wrlinux-ovp          = "HEAD:6825e268c49a36f2b106930faa60c718fb7815b0"
+meta-cgl-common      = "HEAD:35c561e52279a1ff70935f0a58d75eea047ad76a"
+wrlinux-cgl          = "HEAD:6825e268c49a36f2b106930faa60c718fb7815b0"
+meta-dpdk            = "HEAD:de1987b84db73627e9bfb14ce65023f463065d68"
+meta-intel-qat       = "HEAD:b7cf51cd21312e971259008191a87beea57442de"
+meta-qemuarma9       = "HEAD:aebeada3a8f1b5cc80db0d1287428a4aa08e126e"
+meta-anaconda        = "HEAD:1a9713633a756fb82623c0ea580ccebb15d277cd"
+meta-overc           
+meta-cube            = "HEAD:5378f5d883d2d4b22b5dfb85922f24a74b533435"
+meta-iot-cloud       = "HEAD:c48177a9865d468d999e84c9926d6ca52260e571"
+wrlinux-overc        = "HEAD:6825e268c49a36f2b106930faa60c718fb7815b0"
+meta-selinux-dl      = "HEAD:29552f0a6ddbc391fc25c2c073646c8548662d5f"
+meta-mingw-dl        = "HEAD:be0db57f6ef99bffe289788df2e3efa19eb31df8"
+meta-security-dl     = "HEAD:3f8b9dc8ae3031f6b4379c1ae40cf5847713e264"
+meta-efi-secure-boot-dl = "HEAD:dd1041e66a34a42487132556aaef1c45398b5a5e"
+meta-encrypted-storage-dl = "HEAD:80cf9567f070a4cbfed34514f96a07ce22c0b162"
+meta-integrity-dl    = "HEAD:eca3004bb0c316c2f29f43feb371649f5ea29e31"
+meta-ids-dl          = "HEAD:f582758860c7137bdc6018af45b7c1318e8c0aaf"
+meta-tpm2-dl         = "HEAD:8e9385dc3bc2cf8fdaf3ccde1ff01f812c8fc08f"
+wrlinux-dl           = "HEAD:b1d83a5dc130ef83fcf61baabd71adc244cb401d"
+meta-tpm-dl          = "HEAD:e973508fc6ab27206c91b1f1e93b99e7c630ed23"
+wrlinux-ovp-dl       = "HEAD:0544207dcacd82c8d4807f16738a3704b4965be8"
+meta-cgl-common-dl   = "HEAD:b5721c0b5ae1e5a3e49510512f1e782b908f0a9b"
+wrlinux-cgl-dl       = "HEAD:6a3a664c7bd8faf0444399b54b048cc89524ef13"
+meta-intel-dl        = "HEAD:c82b9c9042df4790a4cb02c79707786882427259"
+meta-dpdk-dl         = "HEAD:7e27b92d63f70f124901509f332f9170ba1dc7cb"
+meta-intel-qat-dl    = "HEAD:e25e7f1552ffe80d5fd378951aed0343c0483690"
+meta-anaconda-dl     = "HEAD:64a9be655e8b390c6c271a92c1b44b27258f14f9"
+meta-signing-key-dl  = "HEAD:33d890b8be4c9658024fd17490fe15054382d57e"
+meta-overc-dl        = "HEAD:82532e58cd1888ff7d9557374da2ec5f70445075"
+meta-cloud-services-dl-2.6 = "HEAD:a64a1f95a157b30bb43f39890fe68a727784a662"
+meta-filesystems-dl-2.6 = "HEAD:f7bd3ceed3da37790e55eb37177221a903cf9eca"
+meta-gnome-dl-2.6    = "HEAD:e6ebe8797d80ecf2a0e2e4a2f9fb9e32cc9961d6"
+meta-gplv2-dl-2.6    = "HEAD:717974118c6c7a267e4ef16f3a9c5f9dcb253fb8"
+meta-initramfs-dl-2.6 = "HEAD:fa0d5d113edf6e418d9b6490bed5e297f2f21582"
+meta-multimedia-dl-2.6 = "HEAD:e45d6026ad5305b066fddae90f821171866b3d10"
+meta-networking-dl-2.6 = "HEAD:6c2984d739596e1619ba2ae6d929ffac4b4cca9a"
+meta-oe-dl-2.6       = "HEAD:31645b097853bb6fe96e07d58eb40c0eee32ed40"
+meta-openstack-dl-2.6 = "HEAD:1f549015b298d3913baf6944dc081648fef6b4c6"
+meta-perl-dl-2.6     = "HEAD:308f140aba3d64307aefff9b7debaa134b427156"
+meta-python-dl-2.6   = "HEAD:d384537a448bd9f395e9bae7b3b9424cff0b5a2a"
+meta-realtime-dl-2.6 = "HEAD:f137817ce3b7b58e5aaa9be039c39c380bd0acca"
+meta-virtualization-dl-2.6 = "HEAD:1b2717bfcc78ddc1693b175d54a07a7a5cec936f"
+meta-webserver-dl-2.6 = "HEAD:51b3d72dca47c970eb2f3e9d5df3c6ade479f142"
+meta-xfce-dl-2.6     = "HEAD:eb72be52426c1d334df640b889b0f03781278869"
+oe-core-dl-2.6       = "HEAD:bc148bdcce815ac4bba386de518ab4a4f9bcc95c"
+local                = "master:9ed0ea8f764dc2edc08faaa1ef975cf512063c4c"
